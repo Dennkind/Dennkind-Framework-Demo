@@ -3,6 +3,42 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       x:Name="page1" Title="Page 1">
     <Grid x:Name="mainGrid" Background="White">
-        <Label Content="Page 1" />
+        <WrapPanel>
+            <GroupBox Header="Header" Margin="12">
+                <WrapPanel Margin="12">
+                    <Button x:Name="fadeOutHeaderButton" Content="Fade Out" Margin="4"
+                            Padding="12,8" Click="FadeOutHeaderButton_Click" />
+
+                    <Button x:Name="fadeInHeaderButton" Content="Fade In" Margin="4"
+                            Padding="12,8" Click="FadeInHeaderButton_Click" />
+                </WrapPanel>
+            </GroupBox>
+
+            <GroupBox Header="Navigation" Margin="12">
+                <WrapPanel Margin="12">
+                    <Button x:Name="fadeOutNavigationButton" Content="Fade Out" Margin="4"
+                            Padding="12,8" Click="FadeOutNavigationButton_Click" />
+
+                    <Button x:Name="fadeInNavigationButton" Content="Fade In" Margin="4"
+                            Padding="12,8" Click="FadeInNavigationButton_Click" />
+
+                    <Button x:Name="collapseNavigationButton" Content="Collapse" Margin="4"
+                            Padding="12,8" Click="CollapseNavigationButton_Click" />
+
+                    <Button x:Name="expandNavigationButton" Content="Expand" Margin="4"
+                            Padding="12,8" Click="ExpandNavigationButton_Click" />
+                </WrapPanel>
+            </GroupBox>
+
+            <GroupBox Header="Footer" Margin="12">
+                <WrapPanel Margin="12">
+                    <Button x:Name="fadeOutFooterButton" Content="Fade Out" Margin="4"
+                            Padding="12,8" Click="FadeOutFooterButton_Click" />
+
+                    <Button x:Name="fadeInFooterButton" Content="Fade In" Margin="4"
+                            Padding="12,8" Click="FadeInFooterButton_Click" />
+                </WrapPanel>
+            </GroupBox>
+        </WrapPanel>
     </Grid>
 </Page>

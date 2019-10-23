@@ -1,15 +1,13 @@
 ﻿<Window x:Class="Dennkind.Framework.DemoApp.UI.Windows.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:dennkind="clr-namespace:Dennkind.Framework.WPF.Controls;assembly=Dennkind.Framework"
-        mc:Ignorable="d" Title="Dennkind Framework Demo">
+        Title="Dennkind Framework Demo" WindowStartupLocation="CenterScreen">
     <Grid x:Name="mainGrid">
         <dennkind:ApplicationFrameControl x:Name="applicationFrameControl" 
                                           HeaderLogo="Dennkind" 
                                           HeaderTitle="Framework Demo"
-                                          FooterVersion="Dennkind Framework Demo v.1.0.0"
+                                          FooterVersion="Dennkind Framework Demo v.1.1.0"
                                           FooterCopyright="© Lukas Koch 2019"
                                           Loaded="ApplicationFrameControl_Loaded" />
     </Grid>

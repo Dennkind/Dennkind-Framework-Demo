@@ -8,9 +8,12 @@ namespace Dennkind.Framework.DemoApp
     /// </summary>
     public partial class App : Application
     {
+        public new static MainWindow MainWindow { get; private set; }
+
         public App()
         {
-            new MainWindow().Show();
+            MainWindow = new MainWindow();
+            MainWindow.Show();
         }
     }
 }
